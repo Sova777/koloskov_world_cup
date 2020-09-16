@@ -13,7 +13,7 @@
     text-align: left; 
   }
   table.info td:nth-child(5n+2) {
-    padding-left: 20px;/*почему-то не работает отступ */
+    padding-left: 20px;
   }
   , table.info th {border: 1px solid grey;}
   table.stat,table.stat td:nth-child(odd) {
@@ -25,7 +25,10 @@
   table.stat td:nth-child(1) {
     text-align:left;
   }
-  table.stat th/*но первый столбец нужно влево */
+  table.stat td:nth-child(1) {
+    padding-left: 20%;
+  }
+  table.stat th
 td.fin {background-color: #dbe5f1;}
 </style>
 </head>
@@ -93,7 +96,7 @@ td.fin {background-color: #dbe5f1;}
 <p class="text">В таблицу сведём игроков с наибольшим количеством первых голов.</p>
 
 <table class="stat">
-  <col width="250">
+  <col width="300">
   <col width="100">
   <col width="80">
   <col width="80">
