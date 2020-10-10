@@ -91,6 +91,6 @@ p.text {
 text-indent: 20px;
 }
 
-:target {
-  color: red;
+.target :target {
+  color: #551A8B;
 }
